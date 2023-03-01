@@ -27,7 +27,7 @@ export interface ProjectEntry {
 
 export interface Section {
     title: string
-    type: 'skill' | 'education' | 'experience' | 'project'
+    type: 'skill' | 'education' | 'experience' | 'project' | 'summary'
     entries: string[] | SchoolEntry[] | WorkEntry[] | ProjectEntry[]
 }
 

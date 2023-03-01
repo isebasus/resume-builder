@@ -112,6 +112,10 @@ header {
     margin-top: 4px;
 }
 
+.summary-content {
+    font-size: 17px;
+}
+
 .duration {
     color: black;
     font-size: 18px;

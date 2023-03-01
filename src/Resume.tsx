@@ -5,6 +5,7 @@ import Skill from "./components/Skill";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Project from "./components/Project";
+import Summary from "./components/Summary";
 
 const Resume = ({data}: {data: ResumeData}) => {
     return <div id="resume" className="resume">
@@ -27,6 +28,12 @@ const Resume = ({data}: {data: ResumeData}) => {
                             {section.type === 'skill' &&
                                 <div className="skill-holder">
                                     {section.entries.map((info, i) => <Skill key={i} content={info as string}/>)}
+                                </div>
+                            }
+                            {
+                                section.type === 'summary' &&
+                                <div>
+                                    {section.entries.map((info, i) => <Summary key={i} content={info as string}/>)}
                                 </div>
                             }
                             {section.type === 'education' &&
